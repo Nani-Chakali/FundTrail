@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Smoke Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed May 07 15:30:19 IST 2025</td>
+<td>Started on:</td><td>Wed May 07 16:57:08 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>79 seconds (79649 ms)</td>
+<tr><td>Total time:</td><td>117 seconds (117641 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>smoke </td>
 </tr><tr>
@@ -67,6 +67,577 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ncpr.CaseOperations.createCaseAndUploadFile()'><b>createCaseAndUploadFile</b><br>Test class: ncpr.CaseOperations</td>
+<td><div><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\progress.js:75:26)
+    at Frame.click (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\frames.js:1022:23)
+    at FrameDispatcher.click (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\dispatcher.js:96:40)
+    at DispatcherConnection.dispatch (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\dispatcher.js:366:39)
+}
+Call log:
+-   - waiting for locator(&quot;xpath=(//button[text()=&apos;Select&apos;])[3]&quot;)
+-     - locator resolved to &lt;button title=&quot;Select&quot;&gt;Select&lt;/button&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     55 × waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:174)
+	at com.microsoft.playwright.Locator.click(Locator.java:2508)
+	at ncpr.CaseOperations.uploadFileToCase(CaseOperations.java:45)
+	at ncpr.CaseOperations.createCaseAndUploadFile(CaseOperations.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\progress.js:75:26)
+    at Frame.click (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\frames.js:1022:23)
+    at FrameDispatcher.click (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\dispatcher.js:96:40)
+    at DispatcherConnection.dispatch (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\dispatcher.js:366:39)
+}
+Call log:
+-   - waiting for locator(&quot;xpath=(//button[text()=&apos;Select&apos;])[3]&quot;)
+-     - locator resolved to &lt;button title=&quot;Select&quot;&gt;Select&lt;/button&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     55 × waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+	... 39 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1811922029", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1811922029'><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\progress.js:75:26)
+    at Frame.click (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\frames.js:1022:23)
+    at FrameDispatcher.click (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\dispatcher.js:96:40)
+    at DispatcherConnection.dispatch (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\dispatcher.js:366:39)
+}
+Call log:
+-   - waiting for locator(&quot;xpath=(//button[text()=&apos;Select&apos;])[3]&quot;)
+-     - locator resolved to &lt;button title=&quot;Select&quot;&gt;Select&lt;/button&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     55 × waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:174)
+	at com.microsoft.playwright.Locator.click(Locator.java:2508)
+	at ncpr.CaseOperations.uploadFileToCase(CaseOperations.java:45)
+	at ncpr.CaseOperations.createCaseAndUploadFile(CaseOperations.java:90)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\progress.js:75:26)
+    at Frame.click (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\frames.js:1022:23)
+    at FrameDispatcher.click (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\dispatcher.js:96:40)
+    at DispatcherConnection.dispatch (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\dispatcher.js:366:39)
+}
+Call log:
+-   - waiting for locator(&quot;xpath=(//button[text()=&apos;Select&apos;])[3]&quot;)
+-     - locator resolved to &lt;button title=&quot;Select&quot;&gt;Select&lt;/button&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     55 × waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+	... 39 more
+</pre></div></td>
+<td>33</td>
+<td>ncpr.CaseOperations@dd05255</td></tr>
+<tr>
+<td title='ncpr.CaseOperations.deleteCreatedCase()'><b>deleteCreatedCase</b><br>Test class: ncpr.CaseOperations</td>
+<td><div><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\progress.js:75:26)
+    at Frame.click (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\frames.js:1022:23)
+    at FrameDispatcher.click (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\dispatcher.js:96:40)
+    at DispatcherConnection.dispatch (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\dispatcher.js:366:39)
+}
+Call log:
+-   - waiting for locator(&quot;xpath=(//button[@title=&apos;Delete&apos;])[3]&quot;)
+-     - locator resolved to &lt;button title=&quot;Delete&quot;&gt;…&lt;/button&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not stable
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not stable
+-     - retrying click action
+-       - waiting 100ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is not stable
+-   13 × retrying click action
+-        - waiting 500ms
+-        - waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+-        - waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;form-container&quot;&gt;…&lt;/div&gt; from &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+-        - waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;form-container&quot;&gt;…&lt;/div&gt; from &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+-        - waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;form-container&quot;&gt;…&lt;/div&gt; from &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-   - retrying click action
+-     - waiting 500ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is visible, enabled and stable
+-     - scrolling into view if needed
+-     - done scrolling
+-     - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-   - retrying click action
+-     - waiting 500ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is visible, enabled and stable
+-     - scrolling into view if needed
+-     - done scrolling
+-     - &lt;div class=&quot;form-container&quot;&gt;…&lt;/div&gt; from &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-   - retrying click action
+-     - waiting 500ms
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:174)
+	at com.microsoft.playwright.Locator.click(Locator.java:2508)
+	at ncpr.CaseOperations.deleteCase(CaseOperations.java:81)
+	at ncpr.CaseOperations.deleteCreatedCase(CaseOperations.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\progress.js:75:26)
+    at Frame.click (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\frames.js:1022:23)
+    at FrameDispatcher.click (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\dispatcher.js:96:40)
+    at DispatcherConnection.dispatch (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\dispatcher.js:366:39)
+}
+Call log:
+-   - waiting for locator(&quot;xpath=(//button[@title=&apos;Delete&apos;])[3]&quot;)
+-     - locator resolved to &lt;button title=&quot;Delete&quot;&gt;…&lt;/button&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not stable
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not stable
+-     - retrying click action
+-       - waiting 100ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is not stable
+-   13 × retrying click action
+-        - waiting 500ms
+-        - waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+-        - waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;form-container&quot;&gt;…&lt;/div&gt; from &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+-        - waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;form-container&quot;&gt;…&lt;/div&gt; from &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+-        - waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;form-container&quot;&gt;…&lt;/div&gt; from &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-   - retrying click action
+-     - waiting 500ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is visible, enabled and stable
+-     - scrolling into view if needed
+-     - done scrolling
+-     - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-   - retrying click action
+-     - waiting 500ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is visible, enabled and stable
+-     - scrolling into view if needed
+-     - done scrolling
+-     - &lt;div class=&quot;form-container&quot;&gt;…&lt;/div&gt; from &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-   - retrying click action
+-     - waiting 500ms
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+	... 39 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace61681175", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace61681175'><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\progress.js:75:26)
+    at Frame.click (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\frames.js:1022:23)
+    at FrameDispatcher.click (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\dispatcher.js:96:40)
+    at DispatcherConnection.dispatch (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\dispatcher.js:366:39)
+}
+Call log:
+-   - waiting for locator(&quot;xpath=(//button[@title=&apos;Delete&apos;])[3]&quot;)
+-     - locator resolved to &lt;button title=&quot;Delete&quot;&gt;…&lt;/button&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not stable
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not stable
+-     - retrying click action
+-       - waiting 100ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is not stable
+-   13 × retrying click action
+-        - waiting 500ms
+-        - waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+-        - waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;form-container&quot;&gt;…&lt;/div&gt; from &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+-        - waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;form-container&quot;&gt;…&lt;/div&gt; from &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+-        - waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;form-container&quot;&gt;…&lt;/div&gt; from &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-   - retrying click action
+-     - waiting 500ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is visible, enabled and stable
+-     - scrolling into view if needed
+-     - done scrolling
+-     - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-   - retrying click action
+-     - waiting 500ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is visible, enabled and stable
+-     - scrolling into view if needed
+-     - done scrolling
+-     - &lt;div class=&quot;form-container&quot;&gt;…&lt;/div&gt; from &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-   - retrying click action
+-     - waiting 500ms
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:174)
+	at com.microsoft.playwright.Locator.click(Locator.java:2508)
+	at ncpr.CaseOperations.deleteCase(CaseOperations.java:81)
+	at ncpr.CaseOperations.deleteCreatedCase(CaseOperations.java:95)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\progress.js:75:26)
+    at Frame.click (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\frames.js:1022:23)
+    at FrameDispatcher.click (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\dispatcher.js:96:40)
+    at DispatcherConnection.dispatch (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\dispatcher.js:366:39)
+}
+Call log:
+-   - waiting for locator(&quot;xpath=(//button[@title=&apos;Delete&apos;])[3]&quot;)
+-     - locator resolved to &lt;button title=&quot;Delete&quot;&gt;…&lt;/button&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not stable
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not stable
+-     - retrying click action
+-       - waiting 100ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is not stable
+-   13 × retrying click action
+-        - waiting 500ms
+-        - waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+-        - waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;form-container&quot;&gt;…&lt;/div&gt; from &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+-        - waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;form-container&quot;&gt;…&lt;/div&gt; from &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+-        - waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;form-container&quot;&gt;…&lt;/div&gt; from &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-   - retrying click action
+-     - waiting 500ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is visible, enabled and stable
+-     - scrolling into view if needed
+-     - done scrolling
+-     - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-   - retrying click action
+-     - waiting 500ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is visible, enabled and stable
+-     - scrolling into view if needed
+-     - done scrolling
+-     - &lt;div class=&quot;form-container&quot;&gt;…&lt;/div&gt; from &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-   - retrying click action
+-     - waiting 500ms
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+	... 39 more
+</pre></div></td>
+<td>32</td>
+<td>ncpr.CaseOperations@dd05255</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,40 +647,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='NCPR.NCPR_HomePage_Validation.ncrpLoginLogout()'><b>ncrpLoginLogout</b><br>Test class: NCPR.NCPR_HomePage_Validation</td>
+<td title='ncpr.HomePageValidations.loginFromFundTrail()'><b>loginFromFundTrail</b><br>Test class: ncpr.HomePageValidations</td>
+<td></td>
+<td>8</td>
+<td>ncpr.HomePageValidations@815b41f</td></tr>
+<tr>
+<td title='ncpr.ComponentVerificationTest.verify_components_load_status()'><b>verify_components_load_status</b><br>Test class: ncpr.ComponentVerificationTest</td>
+<td></td>
+<td>4</td>
+<td>ncpr.ComponentVerificationTest@2f4948e4</td></tr>
+<tr>
+<td title='ncpr.HomePageValidations.ncrpLoginLogout()'><b>ncrpLoginLogout</b><br>Test class: ncpr.HomePageValidations</td>
 <td></td>
 <td>1</td>
-<td>NCPR.NCPR_HomePage_Validation@3b69e7d1</td></tr>
+<td>ncpr.HomePageValidations@815b41f</td></tr>
 <tr>
-<td title='NCPR.CaseOperations.createCaseAndUploadFile()'><b>createCaseAndUploadFile</b><br>Test class: NCPR.CaseOperations</td>
+<td title='ncpr.CaseDetailViewValidations.DetailViewComponents()'><b>DetailViewComponents</b><br>Test class: ncpr.CaseDetailViewValidations</td>
 <td></td>
-<td>39</td>
-<td>NCPR.CaseOperations@7e6f74c</td></tr>
+<td>2</td>
+<td>ncpr.CaseDetailViewValidations@6a78afa0</td></tr>
 <tr>
-<td title='NCPR.CaseDetailViewValidations.DetailViewComponents()'><b>DetailViewComponents</b><br>Test class: NCPR.CaseDetailViewValidations</td>
-<td></td>
-<td>3</td>
-<td>NCPR.CaseDetailViewValidations@dd05255</td></tr>
-<tr>
-<td title='NCPR.CaseDetailViewValidations.test_verify_pdf_data_matches_ui()'><b>test_verify_pdf_data_matches_ui</b><br>Test class: NCPR.CaseDetailViewValidations</td>
-<td></td>
-<td>4</td>
-<td>NCPR.CaseDetailViewValidations@dd05255</td></tr>
-<tr>
-<td title='NCPR.ComponentVerificationTest.verify_components_load_status()'><b>verify_components_load_status</b><br>Test class: NCPR.ComponentVerificationTest</td>
+<td title='ncpr.CaseDetailViewValidations.test_verify_pdf_data_matches_ui()'><b>test_verify_pdf_data_matches_ui</b><br>Test class: ncpr.CaseDetailViewValidations</td>
 <td></td>
 <td>3</td>
-<td>NCPR.ComponentVerificationTest@6a78afa0</td></tr>
-<tr>
-<td title='NCPR.CaseOperations.deleteCreatedCase()'><b>deleteCreatedCase</b><br>Test class: NCPR.CaseOperations</td>
-<td></td>
-<td>4</td>
-<td>NCPR.CaseOperations@7e6f74c</td></tr>
-<tr>
-<td title='NCPR.NCPR_HomePage_Validation.loginFromFundTrail()'><b>loginFromFundTrail</b><br>Test class: NCPR.NCPR_HomePage_Validation</td>
-<td></td>
-<td>6</td>
-<td>NCPR.NCPR_HomePage_Validation@3b69e7d1</td></tr>
+<td>ncpr.CaseDetailViewValidations@6a78afa0</td></tr>
 </table><p>
 </body>
 </html>

@@ -17,7 +17,6 @@ public class PasswordPolicy extends BaseTest {
 	@BeforeClass
 	public void login() {
 
-		@SuppressWarnings("unused")
 		LoginPage login = new LoginPage(page);
 //		login.login("superadmin1", "aaaaA1!");
 		page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("User Management")).click();

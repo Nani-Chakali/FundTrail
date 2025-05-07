@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Smoke_Test_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Smoke Test Suite</span>
+              <span class="suite-name border-failed">Smoke Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Smoke_Test_Suite" class="navigator-link ">
-                    <span>C:\Users\iAcuity\eclipse-workspace\FundTrail\src\test\resources\SmokeSuit.xml</span>
+                    <span>C:\Users\iAcuity\eclipse-workspace\FundTrail\src\test\resources\testsuits\SmokeSuit.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">7 methods, 2 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Smoke_Test_Suite" class="hide-methods failed suite-Smoke_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Smoke_Test_Suite -->
+                      <a href="#" panel-name="suite-Smoke_Test_Suite" class="show-methods failed suite-Smoke_Test_Suite"> (show)</a> <!-- show-methods failed suite-Smoke_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Smoke_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="ncpr.CaseOperations" class="method navigator-link" hash-for-method="createCaseAndUploadFile">createCaseAndUploadFile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="ncpr.CaseOperations" class="method navigator-link" hash-for-method="deleteCreatedCase">deleteCreatedCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Smoke_Test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,37 +122,27 @@
                     <div class="method-list-content passed suite-Smoke_Test_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="NCPR.CaseDetailViewValidations" class="method navigator-link" hash-for-method="DetailViewComponents">DetailViewComponents</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="ncpr.CaseDetailViewValidations" class="method navigator-link" hash-for-method="DetailViewComponents">DetailViewComponents</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="NCPR.CaseOperations" class="method navigator-link" hash-for-method="createCaseAndUploadFile">createCaseAndUploadFile</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="ncpr.HomePageValidations" class="method navigator-link" hash-for-method="loginFromFundTrail">loginFromFundTrail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="NCPR.CaseOperations" class="method navigator-link" hash-for-method="deleteCreatedCase">deleteCreatedCase</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="ncpr.HomePageValidations" class="method navigator-link" hash-for-method="ncrpLoginLogout">ncrpLoginLogout</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="NCPR.NCPR_HomePage_Validation" class="method navigator-link" hash-for-method="loginFromFundTrail">loginFromFundTrail</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="ncpr.CaseDetailViewValidations" class="method navigator-link" hash-for-method="test_verify_pdf_data_matches_ui">test_verify_pdf_data_matches_ui</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="NCPR.NCPR_HomePage_Validation" class="method navigator-link" hash-for-method="ncrpLoginLogout">ncrpLoginLogout</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="NCPR.CaseDetailViewValidations" class="method navigator-link" hash-for-method="test_verify_pdf_data_matches_ui">test_verify_pdf_data_matches_ui</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="NCPR.ComponentVerificationTest" class="method navigator-link" hash-for-method="verify_components_load_status">verify_components_load_status</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Smoke_Test_Suite" title="ncpr.ComponentVerificationTest" class="method navigator-link" hash-for-method="verify_components_load_status">verify_components_load_status</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Smoke_Test_Suite -->
@@ -148,17 +157,300 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Smoke_Test_Suite" class="panel Smoke_Test_Suite">
-          <div class="suite-Smoke_Test_Suite-class-passed">
+          <div class="suite-Smoke_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">NCPR.ComponentVerificationTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">ncpr.CaseOperations</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verify_components_load_status">
-                  </a> <!-- verify_components_load_status -->
-                  <span class="method-name">verify_components_load_status</span>
+                  <a name="createCaseAndUploadFile">
+                  </a> <!-- createCaseAndUploadFile -->
+                  <span class="method-name">createCaseAndUploadFile</span>
+                  <div class="stack-trace">com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\progress.js:75:26)
+    at Frame.click (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\frames.js:1022:23)
+    at FrameDispatcher.click (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\dispatcher.js:96:40)
+    at DispatcherConnection.dispatch (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\dispatcher.js:366:39)
+}
+Call log:
+-   - waiting for locator(&quot;xpath=(//button[text()=&apos;Select&apos;])[3]&quot;)
+-     - locator resolved to &lt;button title=&quot;Select&quot;&gt;Select&lt;/button&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     55 × waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:174)
+	at com.microsoft.playwright.Locator.click(Locator.java:2508)
+	at ncpr.CaseOperations.uploadFileToCase(CaseOperations.java:45)
+	at ncpr.CaseOperations.createCaseAndUploadFile(CaseOperations.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\progress.js:75:26)
+    at Frame.click (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\frames.js:1022:23)
+    at FrameDispatcher.click (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\dispatcher.js:96:40)
+    at DispatcherConnection.dispatch (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\dispatcher.js:366:39)
+}
+Call log:
+-   - waiting for locator(&quot;xpath=(//button[text()=&apos;Select&apos;])[3]&quot;)
+-     - locator resolved to &lt;button title=&quot;Select&quot;&gt;Select&lt;/button&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     55 × waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+	... 39 more
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteCreatedCase">
+                  </a> <!-- deleteCreatedCase -->
+                  <span class="method-name">deleteCreatedCase</span>
+                  <div class="stack-trace">com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\progress.js:75:26)
+    at Frame.click (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\frames.js:1022:23)
+    at FrameDispatcher.click (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\dispatcher.js:96:40)
+    at DispatcherConnection.dispatch (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\dispatcher.js:366:39)
+}
+Call log:
+-   - waiting for locator(&quot;xpath=(//button[@title=&apos;Delete&apos;])[3]&quot;)
+-     - locator resolved to &lt;button title=&quot;Delete&quot;&gt;…&lt;/button&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not stable
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not stable
+-     - retrying click action
+-       - waiting 100ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is not stable
+-   13 × retrying click action
+-        - waiting 500ms
+-        - waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+-        - waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;form-container&quot;&gt;…&lt;/div&gt; from &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+-        - waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;form-container&quot;&gt;…&lt;/div&gt; from &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+-        - waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;form-container&quot;&gt;…&lt;/div&gt; from &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-   - retrying click action
+-     - waiting 500ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is visible, enabled and stable
+-     - scrolling into view if needed
+-     - done scrolling
+-     - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-   - retrying click action
+-     - waiting 500ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is visible, enabled and stable
+-     - scrolling into view if needed
+-     - done scrolling
+-     - &lt;div class=&quot;form-container&quot;&gt;…&lt;/div&gt; from &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-   - retrying click action
+-     - waiting 500ms
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:174)
+	at com.microsoft.playwright.Locator.click(Locator.java:2508)
+	at ncpr.CaseOperations.deleteCase(CaseOperations.java:81)
+	at ncpr.CaseOperations.deleteCreatedCase(CaseOperations.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\progress.js:75:26)
+    at Frame.click (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\frames.js:1022:23)
+    at FrameDispatcher.click (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\dispatcher.js:96:40)
+    at DispatcherConnection.dispatch (C:\Users\iAcuity\AppData\Local\Temp\playwright-java-10649015029238936701\package\lib\server\dispatchers\dispatcher.js:366:39)
+}
+Call log:
+-   - waiting for locator(&quot;xpath=(//button[@title=&apos;Delete&apos;])[3]&quot;)
+-     - locator resolved to &lt;button title=&quot;Delete&quot;&gt;…&lt;/button&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not stable
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not stable
+-     - retrying click action
+-       - waiting 100ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is not stable
+-   13 × retrying click action
+-        - waiting 500ms
+-        - waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+-        - waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;form-container&quot;&gt;…&lt;/div&gt; from &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+-        - waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;form-container&quot;&gt;…&lt;/div&gt; from &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+-        - waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;form-container&quot;&gt;…&lt;/div&gt; from &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-   - retrying click action
+-     - waiting 500ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is visible, enabled and stable
+-     - scrolling into view if needed
+-     - done scrolling
+-     - &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; intercepts pointer events
+-   - retrying click action
+-     - waiting 500ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is visible, enabled and stable
+-     - scrolling into view if needed
+-     - done scrolling
+-     - &lt;div class=&quot;form-container&quot;&gt;…&lt;/div&gt; from &lt;div data-pc-section=&quot;mask&quot; class=&quot;p-dialog-mask p-dialog-center p-component-overlay p-component-overlay-enter p-dialog-draggable p-dialog-resizable&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-   - retrying click action
+-     - waiting 500ms
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+	... 39 more
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_Test_Suite-class-failed -->
+          <div class="suite-Smoke_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ncpr.CaseDetailViewValidations</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DetailViewComponents">
+                  </a> <!-- DetailViewComponents -->
+                  <span class="method-name">DetailViewComponents</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_verify_pdf_data_matches_ui">
+                  </a> <!-- test_verify_pdf_data_matches_ui -->
+                  <span class="method-name">test_verify_pdf_data_matches_ui</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -166,7 +458,7 @@
           <div class="suite-Smoke_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">NCPR.NCPR_HomePage_Validation</span>
+              <span class="class-name">ncpr.HomePageValidations</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -188,43 +480,14 @@
           <div class="suite-Smoke_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">NCPR.CaseOperations</span>
+              <span class="class-name">ncpr.ComponentVerificationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createCaseAndUploadFile">
-                  </a> <!-- createCaseAndUploadFile -->
-                  <span class="method-name">createCaseAndUploadFile</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="deleteCreatedCase">
-                  </a> <!-- deleteCreatedCase -->
-                  <span class="method-name">deleteCreatedCase</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Smoke_Test_Suite-class-passed -->
-          <div class="suite-Smoke_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">NCPR.CaseDetailViewValidations</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="DetailViewComponents">
-                  </a> <!-- DetailViewComponents -->
-                  <span class="method-name">DetailViewComponents</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test_verify_pdf_data_matches_ui">
-                  </a> <!-- test_verify_pdf_data_matches_ui -->
-                  <span class="method-name">test_verify_pdf_data_matches_ui</span>
+                  <a name="verify_components_load_status">
+                  </a> <!-- verify_components_load_status -->
+                  <span class="method-name">verify_components_load_status</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -232,13 +495,16 @@
         </div> <!-- panel Smoke_Test_Suite -->
         <div panel-name="test-xml-Smoke_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\iAcuity\eclipse-workspace\FundTrail\src\test\resources\SmokeSuit.xml</span>
+            <span class="header-content">C:\Users\iAcuity\eclipse-workspace\FundTrail\src\test\resources\testsuits\SmokeSuit.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Smoke Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;listeners.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Smoke Tests&quot;&gt;
     &lt;groups&gt;
       &lt;run&gt;
@@ -246,10 +512,10 @@
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;NCPR.NCPR_HomePage_Validation&quot;/&gt;
-      &lt;class name=&quot;NCPR.CaseOperations&quot;/&gt;
-      &lt;class name=&quot;NCPR.CaseDetailViewValidations&quot;/&gt;
-      &lt;class name=&quot;NCPR.ComponentVerificationTest&quot;/&gt;
+      &lt;class name=&quot;ncpr.HomePageValidations&quot;/&gt;
+      &lt;class name=&quot;ncpr.CaseOperations&quot;/&gt;
+      &lt;class name=&quot;ncpr.CaseDetailViewValidations&quot;/&gt;
+      &lt;class name=&quot;ncpr.ComponentVerificationTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Smoke Tests --&gt;
 &lt;/suite&gt; &lt;!-- Smoke Test Suite --&gt;
@@ -324,32 +590,32 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createCaseAndUploadFile')
-data.setCell(0, 2, 'NCPR.CaseOperations')
-data.setCell(0, 3, 39805);
+data.setCell(0, 2, 'ncpr.CaseOperations')
+data.setCell(0, 3, 33177);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginFromFundTrail')
-data.setCell(1, 2, 'NCPR.NCPR_HomePage_Validation')
-data.setCell(1, 3, 6024);
+data.setCell(1, 1, 'deleteCreatedCase')
+data.setCell(1, 2, 'ncpr.CaseOperations')
+data.setCell(1, 3, 32242);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'deleteCreatedCase')
-data.setCell(2, 2, 'NCPR.CaseOperations')
-data.setCell(2, 3, 4829);
+data.setCell(2, 1, 'loginFromFundTrail')
+data.setCell(2, 2, 'ncpr.HomePageValidations')
+data.setCell(2, 3, 8566);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'test_verify_pdf_data_matches_ui')
-data.setCell(3, 2, 'NCPR.CaseDetailViewValidations')
-data.setCell(3, 3, 4002);
+data.setCell(3, 1, 'verify_components_load_status')
+data.setCell(3, 2, 'ncpr.ComponentVerificationTest')
+data.setCell(3, 3, 4014);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verify_components_load_status')
-data.setCell(4, 2, 'NCPR.ComponentVerificationTest')
-data.setCell(4, 3, 3815);
+data.setCell(4, 1, 'test_verify_pdf_data_matches_ui')
+data.setCell(4, 2, 'ncpr.CaseDetailViewValidations')
+data.setCell(4, 3, 3943);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'DetailViewComponents')
-data.setCell(5, 2, 'NCPR.CaseDetailViewValidations')
-data.setCell(5, 3, 3090);
+data.setCell(5, 2, 'ncpr.CaseDetailViewValidations')
+data.setCell(5, 3, 2486);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'ncrpLoginLogout')
-data.setCell(6, 2, 'NCPR.NCPR_HomePage_Validation')
-data.setCell(6, 3, 1932);
+data.setCell(6, 2, 'ncpr.HomePageValidations')
+data.setCell(6, 3, 1089);
 window.suiteTableData['Smoke_Test_Suite']= { tableData: data, tableDiv: 'times-div-Smoke_Test_Suite'}
 return data;
 }
@@ -380,75 +646,79 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">NCPR.NCPR_HomePage_Validation</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">ncpr.HomePageValidations</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginFromFundTrail</span>
-                <span class="method-start">9452 ms</span>
+                <span class="method-start">25758 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ncrpLoginLogout</span>
-                <span class="method-start">15493 ms</span>
+                <span class="method-start">34346 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">17427 ms</span>
+                <span class="method-start">35439 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">NCPR.CaseOperations</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">ncpr.CaseOperations</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">17893 ms</span>
+                <span class="method-start">35869 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">createCaseAndUploadFile</span>
-                <span class="method-start">19618 ms</span>
+                <span class="method-start">37522 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">deleteCreatedCase</span>
-                <span class="method-start">59428 ms</span>
+                <span class="method-start">70781 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">64264 ms</span>
+                <span class="method-start">103047 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">NCPR.CaseDetailViewValidations</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">ncpr.CaseDetailViewValidations</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">64678 ms</span>
+                <span class="method-start">103559 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">DetailViewComponents</span>
-                <span class="method-start">66051 ms</span>
+                <span class="method-start">104993 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_verify_pdf_data_matches_ui</span>
-                <span class="method-start">69143 ms</span>
+                <span class="method-start">107494 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">73152 ms</span>
+                <span class="method-start">111449 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">NCPR.ComponentVerificationTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">ncpr.ComponentVerificationTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">73848 ms</span>
+                <span class="method-start">111835 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verify_components_load_status</span>
-                <span class="method-start">75390 ms</span>
+                <span class="method-start">113242 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">79206 ms</span>
+                <span class="method-start">117259 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

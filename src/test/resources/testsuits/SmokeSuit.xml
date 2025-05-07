@@ -1,5 +1,8 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Smoke Test Suite">
+	<listeners>
+		<listener class-name="listeners.TestListener" />
+	</listeners>
 	<test name="Smoke Tests">
 		<groups>
 			<run>
@@ -7,11 +10,11 @@
 			</run>
 		</groups>
 		<classes>
-			<class name="NCPR.NCPR_HomePage_Validation" />
-			<class name="NCPR.CaseOperations" />
-			<class name="NCPR.CaseDetailViewValidations" />
-			<class name="NCPR.ComponentVerificationTest" />
-			
+			<class name="ncpr.HomePageValidations" />
+			<class name="ncpr.CaseOperations" />
+			<class name="ncpr.CaseDetailViewValidations" />
+			<class name="ncpr.ComponentVerificationTest" />
+
 			<!-- Add more test classes as needed -->
 		</classes>
 	</test>
