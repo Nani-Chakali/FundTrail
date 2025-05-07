@@ -1,61 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-28T11:48:28 IST" name="Default suite" finished-at="2025-04-28T15:01:46 IST" duration-ms="11597260">
+  <suite started-at="2025-05-07T15:30:19 IST" name="Smoke Test Suite" finished-at="2025-05-07T15:31:39 IST" duration-ms="79649">
     <groups>
+      <group name="smoke">
+        <method signature="CaseDetailViewValidations.DetailViewComponents()[pri:0, instance:NCPR.CaseDetailViewValidations@dd05255]" name="DetailViewComponents" class="NCPR.CaseDetailViewValidations"/>
+        <method signature="CaseDetailViewValidations.test_verify_pdf_data_matches_ui()[pri:0, instance:NCPR.CaseDetailViewValidations@dd05255]" name="test_verify_pdf_data_matches_ui" class="NCPR.CaseDetailViewValidations"/>
+        <method signature="CaseOperations.createCaseAndUploadFile()[pri:0, instance:NCPR.CaseOperations@7e6f74c]" name="createCaseAndUploadFile" class="NCPR.CaseOperations"/>
+        <method signature="CaseOperations.deleteCreatedCase()[pri:0, instance:NCPR.CaseOperations@7e6f74c]" name="deleteCreatedCase" class="NCPR.CaseOperations"/>
+        <method signature="ComponentVerificationTest.verify_components_load_status()[pri:0, instance:NCPR.ComponentVerificationTest@6a78afa0]" name="verify_components_load_status" class="NCPR.ComponentVerificationTest"/>
+        <method signature="NCPR_HomePage_Validation.loginFromFundTrail()[pri:0, instance:NCPR.NCPR_HomePage_Validation@3b69e7d1]" name="loginFromFundTrail" class="NCPR.NCPR_HomePage_Validation"/>
+        <method signature="NCPR_HomePage_Validation.ncrpLoginLogout()[pri:0, instance:NCPR.NCPR_HomePage_Validation@3b69e7d1]" name="ncrpLoginLogout" class="NCPR.NCPR_HomePage_Validation"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-04-28T11:48:28 IST" name="Default test" finished-at="2025-04-28T15:01:46 IST" duration-ms="11597260">
-      <class name="tests.Maximum_Cases_Allowed_Test">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.Maximum_Cases_Allowed_Test@6c6cb480]" started-at="2025-04-28T11:48:28 IST" name="setUp" finished-at="2025-04-28T11:48:45 IST" duration-ms="17043" status="PASS">
+    <test started-at="2025-05-07T15:30:19 IST" name="Smoke Tests" finished-at="2025-05-07T15:31:39 IST" duration-ms="79649">
+      <class name="NCPR.CaseDetailViewValidations">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:NCPR.CaseDetailViewValidations@dd05255]" started-at="2025-05-07T15:31:24 IST" name="setUp" finished-at="2025-05-07T15:31:25 IST" duration-ms="1371" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Verfiy_Max_Cases_Allowed()[pri:0, instance:tests.Maximum_Cases_Allowed_Test@6c6cb480]" started-at="2025-04-28T11:48:46 IST" name="Verfiy_Max_Cases_Allowed" finished-at="2025-04-28T15:01:45 IST" duration-ms="11578972" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA["Expected text not found! Actual text: " + actualText]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: "Expected text not found! Actual text: " + actualText
-at tests.Maximum_Cases_Allowed_Test.Verfiy_Max_Cases_Allowed(Maximum_Cases_Allowed_Test.java:17)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="DetailViewComponents()[pri:0, instance:NCPR.CaseDetailViewValidations@dd05255]" started-at="2025-05-07T15:31:25 IST" name="DetailViewComponents" finished-at="2025-05-07T15:31:28 IST" duration-ms="3090" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verfiy_Max_Cases_Allowed -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.Maximum_Cases_Allowed_Test@6c6cb480]" started-at="2025-04-28T15:01:45 IST" name="tearDown" finished-at="2025-04-28T15:01:46 IST" duration-ms="1006" status="PASS">
+        </test-method> <!-- DetailViewComponents -->
+        <test-method signature="test_verify_pdf_data_matches_ui()[pri:0, instance:NCPR.CaseDetailViewValidations@dd05255]" started-at="2025-05-07T15:31:28 IST" name="test_verify_pdf_data_matches_ui" finished-at="2025-05-07T15:31:32 IST" duration-ms="4002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_verify_pdf_data_matches_ui -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:NCPR.CaseDetailViewValidations@dd05255]" started-at="2025-05-07T15:31:32 IST" name="tearDown" finished-at="2025-05-07T15:31:33 IST" duration-ms="695" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.Maximum_Cases_Allowed_Test -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- NCPR.CaseDetailViewValidations -->
+      <class name="NCPR.CaseOperations">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:NCPR.CaseOperations@7e6f74c]" started-at="2025-05-07T15:30:37 IST" name="setUp" finished-at="2025-05-07T15:30:39 IST" duration-ms="1716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createCaseAndUploadFile()[pri:0, instance:NCPR.CaseOperations@7e6f74c]" started-at="2025-05-07T15:30:39 IST" name="createCaseAndUploadFile" finished-at="2025-05-07T15:31:18 IST" duration-ms="39805" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCaseAndUploadFile -->
+        <test-method signature="deleteCreatedCase()[pri:0, instance:NCPR.CaseOperations@7e6f74c]" started-at="2025-05-07T15:31:18 IST" name="deleteCreatedCase" finished-at="2025-05-07T15:31:23 IST" duration-ms="4829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCreatedCase -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:NCPR.CaseOperations@7e6f74c]" started-at="2025-05-07T15:31:23 IST" name="tearDown" finished-at="2025-05-07T15:31:24 IST" duration-ms="413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- NCPR.CaseOperations -->
+      <class name="NCPR.NCPR_HomePage_Validation">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:NCPR.NCPR_HomePage_Validation@3b69e7d1]" started-at="2025-05-07T15:30:19 IST" name="setUp" finished-at="2025-05-07T15:30:28 IST" duration-ms="9385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginFromFundTrail()[pri:0, instance:NCPR.NCPR_HomePage_Validation@3b69e7d1]" started-at="2025-05-07T15:30:29 IST" name="loginFromFundTrail" finished-at="2025-05-07T15:30:35 IST" duration-ms="6024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFromFundTrail -->
+        <test-method signature="ncrpLoginLogout()[pri:0, instance:NCPR.NCPR_HomePage_Validation@3b69e7d1]" started-at="2025-05-07T15:30:35 IST" name="ncrpLoginLogout" finished-at="2025-05-07T15:30:36 IST" duration-ms="1932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ncrpLoginLogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:NCPR.NCPR_HomePage_Validation@3b69e7d1]" started-at="2025-05-07T15:30:36 IST" name="tearDown" finished-at="2025-05-07T15:30:37 IST" duration-ms="464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- NCPR.NCPR_HomePage_Validation -->
+      <class name="NCPR.ComponentVerificationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:NCPR.ComponentVerificationTest@6a78afa0]" started-at="2025-05-07T15:31:33 IST" name="setUp" finished-at="2025-05-07T15:31:34 IST" duration-ms="1540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_components_load_status()[pri:0, instance:NCPR.ComponentVerificationTest@6a78afa0]" started-at="2025-05-07T15:31:34 IST" name="verify_components_load_status" finished-at="2025-05-07T15:31:38 IST" duration-ms="3815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_components_load_status -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:NCPR.ComponentVerificationTest@6a78afa0]" started-at="2025-05-07T15:31:38 IST" name="tearDown" finished-at="2025-05-07T15:31:39 IST" duration-ms="413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- NCPR.ComponentVerificationTest -->
+    </test> <!-- Smoke Tests -->
+  </suite> <!-- Smoke Test Suite -->
 </testng-results>

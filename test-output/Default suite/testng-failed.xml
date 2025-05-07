@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.Maximum_Cases_Allowed_Test">
+      <class name="NCPR.ComponentVerificationTest">
         <methods>
           <include name="setUp"/>
+          <include name="verify_components_load_status"/>
           <include name="tearDown"/>
-          <include name="Verfiy_Max_Cases_Allowed"/>
         </methods>
-      </class> <!-- tests.Maximum_Cases_Allowed_Test -->
+      </class> <!-- NCPR.ComponentVerificationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
