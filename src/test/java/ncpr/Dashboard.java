@@ -15,36 +15,71 @@ import pages.LoginPage;
 public class Dashboard extends BaseTest {
 
 	@Test
-	public void DashBoardComponents() {
+	public void GlobalDashBoardComponents() {
 
 		LoginPage login = new LoginPage(page);
 		login.ncrpLogin();
 
-		page.locator("(//button[text()='Select'])[3]").click();
-
 		page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Dashboard")).click();
 
-		Locator kpiCards = page.locator(".kpi-card"); // adjust this selector if needed
+		page.waitForSelector(".kpi-card");
+		Locator kpiCards = page.locator(".kpi-card");
 		int count = kpiCards.count();
 		Map<String, String> kpiMap = new HashMap<>();
+		
+		System.out.println("############## Global DashBoard Components #####################");
 
 		for (int i = 0; i < count; i++) {
 			Locator card = kpiCards.nth(i);
 
-			// Print full card text for debugging
-			System.out.println("Card #" + (i + 1));
-			System.out.println("Full Text: " + card.innerText());
-
-			// Try extracting using more flexible locator
 			Locator labelLocator = card.locator("p").first(); // label
 			Locator valueLocator = card.locator("p").nth(1); // value
 
 			String label = labelLocator.innerText().trim();
 			String value = valueLocator.innerText().trim();
 
-			// Log extracted text
-			System.out.println("Label: " + label);
-			System.out.println("Value: " + value);
+			System.out.print(label + ":");
+			System.out.println(" " + value);
+
+			// Add to map if both are non-empty
+			if (!label.isEmpty() && !value.isEmpty()) {
+				kpiMap.put(label, value);
+			}
+		}
+
+		// Final map output
+		System.out.println("KPI Map: " + kpiMap);
+
+	}
+
+	@Test
+	public void CaseDetailViewDashBoardComponents() {
+
+		LoginPage login = new LoginPage(page);
+		login.ncrpLogin();
+
+		page.locator("(//button[text()='Select'])[1]").click();
+
+		page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Dashboard")).click();
+
+		page.waitForSelector(".kpi-card");
+		Locator kpiCards = page.locator(".kpi-card");
+		int count = kpiCards.count();
+		Map<String, String> kpiMap = new HashMap<>();
+		
+		System.out.println("############## Case Detail View DashBoard Components #####################");
+
+		for (int i = 0; i < count; i++) {
+			Locator card = kpiCards.nth(i);
+
+			Locator labelLocator = card.locator("p").first(); // label
+			Locator valueLocator = card.locator("p").nth(1); // value
+
+			String label = labelLocator.innerText().trim();
+			String value = valueLocator.innerText().trim();
+
+			System.out.print(label + ":");
+			System.out.println(" " + value);
 
 			// Add to map if both are non-empty
 			if (!label.isEmpty() && !value.isEmpty()) {

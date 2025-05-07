@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="NCPR.ComponentVerificationTest">
+      <class name="ncpr.LinkView">
         <methods>
           <include name="setUp"/>
-          <include name="verify_components_load_status"/>
           <include name="tearDown"/>
+          <include name="ExcelDownLoadCheck"/>
         </methods>
-      </class> <!-- NCPR.ComponentVerificationTest -->
+      </class> <!-- ncpr.LinkView -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
